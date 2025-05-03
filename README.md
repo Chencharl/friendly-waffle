@@ -49,6 +49,12 @@ Final model selection was based on performance aggregated across these metrics.
 - **BMI**, **average glucose**, **hypertension**, and **heart disease** were also important.
 - **Marital status** appeared predictive but likely acted as a confounder due to age.
 
+## Authors
+
+Yanzhi Hua – EDA, logistic regression, XGBoost implementation
+Chen Yang – SMOTE balancing, random forest modeling, results synthesis
+
+
 ## Reproducibility
 
 To reproduce the results:
@@ -60,8 +66,3 @@ To reproduce the results:
 
 ```r
 install.packages(c("tidyverse", "caret", "xgboost", "DMwR", "pROC", "randomForest", "knitr"))
-
-## Authors
-
-Yanzhi Hua – EDA, logistic regression, XGBoost implementation
-Chen Yang – SMOTE balancing, random forest modeling, results synthesis
