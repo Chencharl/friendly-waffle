@@ -16,12 +16,27 @@ This project aims to develop a machine learning-based stroke risk prediction mod
 ├── README.md # This file
 
 
-## Dataset
 
-- Source: [Kaggle Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
-- Observations: 5,110
-- Features: 10 (e.g., age, BMI, hypertension, heart disease, smoking status)
-- Response variable: `stroke` (binary: 1 = stroke occurred, 0 = no stroke)
+---
+
+##  Dataset
+
+- **Source**: [Kaggle: Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+- **Features**: Age, gender, hypertension, heart disease, marital status, work type, residence type, avg glucose level, BMI, smoking status
+- **Target**: `stroke` (binary classification)
+
+---
+
+## 🚀 How to Reproduce
+
+To reproduce the results locally:
+
+1. Clone this repository
+2. Make sure R (>= 4.0) is installed
+3. Install required packages:
+
+```r
+install.packages(c("tidyverse", "caret", "pROC", "xgboost", "rpart", "rpart.plot", "doParallel", "GGally", "epitools", "patchwork"))
 
 ## Methods
 
@@ -54,13 +69,6 @@ Final model selection was based on performance aggregated across these metrics.
 Yanzhi Hua – EDA, logistic regression, XGBoost implementation
 Chen Yang – SMOTE balancing, random forest modeling, results synthesis
 
-
-## Reproducibility
-
-To reproduce the results:
-1. Clone this repository
-2. Open `final_report.Rmd` in RStudio
-3. Run all chunks (requires R packages listed below)
 
 ## Required R Packages
 
